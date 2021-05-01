@@ -1,0 +1,15 @@
+diff --git a/node_modules/@metamask/inpage-provider/dist/initializeProvider.js b/node_modules/@metamask/inpage-provider/dist/initializeProvider.js
+index e0a31b6..d118fee 100644
+--- a/node_modules/@metamask/inpage-provider/dist/initializeProvider.js
++++ b/node_modules/@metamask/inpage-provider/dist/initializeProvider.js
+@@ -45,8 +45,8 @@ exports.initializeProvider = initializeProvider;
+  * @param providerInstance - The provider instance.
+  */
+ function setGlobalProvider(providerInstance) {
+-    window.ethereum = providerInstance;
+-    window.dispatchEvent(new Event('ethereum#initialized'));
++    window.ethereum2 = providerInstance;
++    window.dispatchEvent(new Event('ethereum2#initialized'));
+ }
+ exports.setGlobalProvider = setGlobalProvider;
+ //# sourceMappingURL=initializeProvider.js.map
