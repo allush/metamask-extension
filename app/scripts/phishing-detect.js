@@ -21,7 +21,7 @@ function start() {
   });
   const connectionStream = new PortStream(extensionPort);
   const mx = setupMultiplex(connectionStream);
-  const backgroundConnection = mx.createStream('controller');
+  const backgroundConnection = mx.createStream('ethereum2-controller');
   const continueLink = document.getElementById('unsafe-continue');
   continueLink.addEventListener('click', () => {
     backgroundConnection.write({

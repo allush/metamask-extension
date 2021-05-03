@@ -111,8 +111,8 @@ function initializeUi(activeTab, container, connectionStream, cb) {
  */
 function connectToAccountManager(connectionStream, cb) {
   const mx = setupMultiplex(connectionStream);
-  setupControllerConnection(mx.createStream('controller'), cb);
-  setupWeb3Connection(mx.createStream('provider'));
+  setupControllerConnection(mx.createStream('ethereum2-controller'), cb);
+  setupWeb3Connection(mx.createStream('ethereum2-provider'));
 }
 
 /**

@@ -1980,7 +1980,7 @@ export default class MetamaskController extends EventEmitter {
     const mux = setupMultiplex(connectionStream);
 
     // messages between inpage and background
-    this.setupProviderConnection(mux.createStream('metamask-provider'), sender);
+    this.setupProviderConnection(mux.createStream('ethereum2-provider'), sender);
 
     // TODO:LegacyProvider: Delete
     // legacy streams
@@ -2000,8 +2000,8 @@ export default class MetamaskController extends EventEmitter {
     // setup multiplexing
     const mux = setupMultiplex(connectionStream);
     // connect features
-    this.setupControllerConnection(mux.createStream('controller'));
-    this.setupProviderConnection(mux.createStream('provider'), sender, true);
+    this.setupControllerConnection(mux.createStream('ethereum2-controller'));
+    this.setupProviderConnection(mux.createStream('ethereum2-provider'), sender, true);
   }
 
   /**

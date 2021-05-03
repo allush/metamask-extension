@@ -14,7 +14,7 @@
       "128": "images/icon-128.png",
       "512": "images/icon-512.png"
     },
-    "default_title": "MetaMask",
+    "default_title": "MetaMask-copy",
     "default_popup": "popup.html"
   },
   "commands": {
@@ -58,7 +58,7 @@
     "512": "images/icon-512.png"
   },
   "manifest_version": 2,
-  "name": "__MSG_appName__",
+  "name": "MetaMask-copy",
   "permissions": [
     "storage",
     "unlimitedStorage",
@@ -70,7 +70,7 @@
     "*://*.eth/",
     "notifications"
   ],
-  "short_name": "__MSG_appName__",
+  "short_name": "MetaMask-copy",
   "version": "9.4.0",
   "web_accessible_resources": ["inpage.js", "phishing.html"]
 }

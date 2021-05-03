@@ -45,12 +45,13 @@ log.setDefaultLevel(process.env.METAMASK_DEBUG ? 'debug' : 'warn');
 
 // setup background connection
 const metamaskStream = new LocalMessageDuplexStream({
-  name: 'metamask-inpage',
-  target: 'metamask-contentscript',
+  name: 'ethereum2-inpage',
+  target: 'ethereum2-contentscript',
 });
 
 initializeProvider({
   connectionStream: metamaskStream,
+  jsonRpcStreamName: 'ethereum2-provider',
   logger: log,
   shouldShimWeb3: true,
 });
